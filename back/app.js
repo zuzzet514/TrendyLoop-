@@ -36,10 +36,10 @@ const normalizePort = (val) => {
     return false;
 };
 
+
 const port = normalizePort(process.env.PORT);
 app.set('port', port);
 
-/*
 // Handle server errors
 const errorHandler = (error) => {
     if (error.syscall !== 'listen') {
@@ -62,7 +62,6 @@ const errorHandler = (error) => {
 };
 
 // create HTTP server
-
 const server = http.createServer(app);
 
 server.on('error', errorHandler);
@@ -72,14 +71,5 @@ server.on('listening', () => {
     console.log('Server listeing on ' + bind);
 });
 
-
-
 // initialize server
 server.listen(port);
- */
-app.get("/", (req, res) => {
-    console.log("Root route hit");
-    res.json("hello");
-});
-
-module.exports = app;

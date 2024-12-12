@@ -31,6 +31,7 @@ const Login = () => {
             if (!response.ok) {
                 const { error } = await response.json();
                 setErrorMessage(error || "Error al iniciar sesión.");
+                alert(error || "Correo, usuario o contraseña incorrectos")
                 return;
             }
 
