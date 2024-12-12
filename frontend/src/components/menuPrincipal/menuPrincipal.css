@@ -1,0 +1,66 @@
+/* Estilo general */
+.menu-principal {
+    padding: 30px;
+    border-bottom: 2px solid #ddd;
+    position: relative;
+    margin-top: -30px;
+}
+
+.menu-promociones {
+    display: flex;
+    margin: 20px 0;
+    padding: 10px;
+}
+
+.promociones-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out; /* Transición suave de las imágenes */
+}
+
+.promociones {
+    min-width: 100%;
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.promociones img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/* Estilos de los botones */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+/* Ajustes para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .menu-promociones {
+        flex-direction: column;
+    }
+
+    .menu-link {
+        font-size: 18px;
+    }
+}

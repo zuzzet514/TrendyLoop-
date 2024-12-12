@@ -1,0 +1,122 @@
+.registrarse {
+    margin-top: 10px;
+    display: grid;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.titulo {
+    font-family: 'Impact', sans-serif;
+    font-size: 30px;
+    font-weight: 100;
+    margin-bottom: 5px;
+}
+.texto {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.texto-contrasena {
+    margin-top: -5px;
+    margin-bottom: -5px;
+}
+
+.datos-usuario {
+    width: 600px;
+    display: grid;
+    grid-template-rows: repeat(6, auto);
+    gap: 15px;
+}
+
+.campo-entrada {
+    position: relative;
+}
+
+.input-campo {
+    height: 50px;
+    box-sizing: border-box;
+    font-size: 16px;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 40px;
+    padding-top: 10px;
+    appearance: none;
+}
+label {
+    position: absolute;
+    top: 14PX;
+    left: 10px;
+    font-size: 16px;
+    color: #aaa;
+    pointer-events: none;
+    transition: 0.3s ease;
+}
+
+.input-campo:focus + label,
+.input-campo:valid + label {
+    top: 4px;
+    font-size: 12px;
+    color: #333;
+}
+
+.boton-iniciar-sesion, .boton-registrarse {
+    height: 50px;
+    font-family: 'Impact', sans-serif;
+    font-weight: normal;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.boton-registrarse {
+    background-color: #0A0A0A;
+    border: 1px solid white;
+    color: white;
+}
+
+.boton-iniciar-sesion {
+    background-color: white;
+    border: 1px solid #0A0A0A;
+    color: #0A0A0A;
+
+}
+
+.h4 {
+    justify-self: center;
+    margin-bottom: 1px;
+    margin-top: 1px;
+
+}
+
+.input-contrasena-container {
+    position: relative;
+    width: 100%;
+}
+
+.input-campo {
+    height: 50px;
+    box-sizing: border-box;
+    font-size: 16px;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 40px;  /* Espacio para el ícono */
+    padding-top: 10px;
+    appearance: none;
+}
+
+.input-contrasena-container i {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #0A0A0A;
+    font-size: 20px;
+}
+
+.checkbox-container {
+    display: flex;
+    margin-top: -20px;
+    margin-bottom: -20px;
+}
+#genero {
+    background-color: white;
+}

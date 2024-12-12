@@ -1,0 +1,29 @@
+
+.barra-container {
+    width: 100%;
+    height: 50px;
+    overflow: hidden;
+    position: relative;
+    background-color: yellow;
+    align-items: center;
+}
+
+.barra-deslizable {
+    text-transform: uppercase;
+    font-family: 'Impact', sans-serif ;
+    display: flex;
+    white-space: nowrap;/*sirve para enviar el texto a la siguiente linea*/
+    animation: deslizar 100s linear infinite;/*animación infinita*/
+    font-size: 20px;
+    color: black;
+    padding: 10px;
+}
+
+@keyframes deslizar {
+    from{
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}

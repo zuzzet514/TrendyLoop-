@@ -1,0 +1,7 @@
+node_modules/
+
+# (contains sensitive information)
+.env
+
+# Ignore images folder
+images/

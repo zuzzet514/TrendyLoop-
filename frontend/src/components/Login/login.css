@@ -1,0 +1,72 @@
+h1 {
+    text-transform: uppercase;
+    font-size: 25px;
+}
+/*header*/
+.menu-login {
+    display: flex;
+    padding: 100px;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 17px;
+}
+/*div login*/
+.login {
+    height: 400px;
+    width: 600px;
+}
+.input-div, .iniciar-sesion {
+    display: grid;
+    gap: 10px;
+    width: 70%;
+}
+.input-div {
+    height: 20%;
+}
+
+.botones-login {
+    display: grid;
+    gap: 15px;
+    margin-top: 10px;
+}
+.iniciar-sesion {
+    background-color: #0A0A0A;
+    color: white;
+    height: 50px;
+    align-items: center;
+    text-transform: uppercase;
+    font-family: 'Impact', sans-serif;
+    font-size: 20px;
+    font-weight: initial;
+}
+.iniciar-sesion:hover {
+    background-color: grey;
+    color: black;
+}
+
+.contraseña {
+    height: 10px;
+    width: 250px;
+    text-transform: uppercase;
+    background-color: transparent;
+    border: none;
+    text-align: left;
+    color: blue;
+}
+
+/*div barra vertical*/
+.barra-vertical {
+    display: flex;
+    align-items: center;
+}
+
+.linea-vertical {
+    width: 1px;
+    height: 450px;
+    background-color: black;
+}
+
+.login-text span{
+    display: block;
+}
