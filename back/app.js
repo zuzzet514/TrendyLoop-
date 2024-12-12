@@ -73,3 +73,8 @@ server.on('listening', () => {
 
 // initialize server
 server.listen(port);
+
+module.exports = {
+    app,
+    server
+};
